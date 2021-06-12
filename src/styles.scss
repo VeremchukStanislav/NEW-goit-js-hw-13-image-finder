@@ -1,0 +1,127 @@
+@import '../node_modules/basiclightbox/src/styles/main.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(172, 166, 136);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.container {
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+input {
+  width: 358px;
+  height: 40px;
+  padding: 15px 16px;
+  border-radius: 10px;
+  background-color: rgb(172, 166, 136);
+  border-color: rgb(255, 255, 255);
+}
+
+.search-btn {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(172, 166, 136);
+  border-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  min-width: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.next {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(53, 50, 204);
+  border-radius: 4px;
+  border: 0px;
+  padding: 10px 20px;
+  min-width: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.5);
+  width: calc((100% - 8 * 15px) / 4);
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: rgba(7, 37, 172, 0.212);
+  border-radius: 10%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: rgb(53, 50, 204);
+}
+
+.stats > .stats-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.image-item {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-item:hover {
+  transform: scale(1.03);
+  cursor: zoom-in;
+}
